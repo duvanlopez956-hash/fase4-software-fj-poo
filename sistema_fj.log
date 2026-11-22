@@ -1,0 +1,46 @@
+[2026-11-20 14:04:43] [START] === INICIO DE EJECUCIÓN DEL SISTEMA SOFTWARE FJ ===
+[2026-11-20 14:04:43] [INFO] Cliente registrado: Cliente [CLI-01] Laura Gómez | Correo: laura.gomez@empresa.com | Tel: 3001234567
+[2026-11-20 14:04:43] [INFO] Cliente registrado: Cliente [CLI-02] Carlos Mendoza | Correo: cmendoza@tech.co | Tel: 3109876543
+[2026-11-20 14:04:43] [ERROR] Instanciación de cliente inválida -> DatoInvalidoError: [ERR_DATO_INVALIDO] El nombre del cliente debe contener al menos 3 caracteres.
+[2026-11-20 14:04:43] [INFO] Servicio registrado: Sala [SRV-01] Sala Innovación A (Aforo: 25 pers.) - $80,000.00/h [Disponible]
+[2026-11-20 14:04:43] [INFO] Servicio registrado: Equipo [SRV-02] Workstation Render RTX (Categoría: Cómputo Alto Rendimiento) - $45,000.00/h [Disponible]
+[2026-11-20 14:04:43] [INFO] Servicio registrado: Asesoría [SRV-03] Auditoría Arquitectura Cloud (Especialidad: Cloud & DevOps) - $150,000.00/h [Disponible]
+[2026-11-20 14:04:43] [ERROR] Instanciación de servicio inválida -> DatoInvalidoError: [ERR_DATO_INVALIDO] La tarifa base 'gratis' no corresponde a un valor numérico válido. | Causa encadenada: ValueError: could not convert string to float: 'gratis'
+[2026-11-20 14:04:43] [INFO] Reserva confirmada: Reserva [RES-101] | Cliente: Laura Gómez | Servicio: Sala Innovación A | Tiempo: 4h | Estado: CONFIRMADA | Total: $376,992.00
+[2026-11-20 14:04:43] [AUDIT] Cierre de evaluación transaccional para reserva 'RES-101'.
+[2026-11-20 14:04:43] [ERROR] Transacción fallida en reserva 'RES-102' -> ServicioNoDisponibleError: [ERR_SERVICIO_NO_DISPONIBLE] El servicio 'Sala Innovación A' no está disponible para reservar.
+[2026-11-20 14:04:43] [AUDIT] Cierre de evaluación transaccional para reserva 'RES-102'.
+[2026-11-20 14:04:43] [ERROR] Transacción fallida en reserva 'RES-103' -> ReservaError: [ERR_RESERVA] El alquiler de equipos requiere una duración mínima de 2 horas.
+[2026-11-20 14:04:43] [AUDIT] Cierre de evaluación transaccional para reserva 'RES-103'.
+[2026-11-20 14:04:43] [INFO] Reserva confirmada: Reserva [RES-104] | Cliente: Carlos Mendoza | Servicio: Workstation Render RTX | Tiempo: 8h | Estado: CONFIRMADA | Total: $364,140.00
+[2026-11-20 14:04:43] [AUDIT] Cierre de evaluación transaccional para reserva 'RES-104'.
+[2026-11-20 14:04:43] [INFO] Reserva RES-101 procesada satisfactoriamente. Total facturado: $376,992.00.
+[2026-11-20 14:04:43] [ERROR] Error al cancelar reserva 'RES-101' -> ReservaError: [ERR_RESERVA] Operación denegada: una reserva PROCESADA no puede cancelarse.
+[2026-11-20 14:04:43] [ERROR] Transacción fallida en reserva 'RES-105-ERR' -> CalculoInconsistenteError: [ERR_CALCULO] El porcentaje de descuento (150.0%) debe estar entre 0 y 100.
+[2026-11-20 14:04:43] [AUDIT] Cierre de evaluación transaccional para reserva 'RES-105-ERR'.
+[2026-11-20 14:04:43] [INFO] Reserva confirmada: Reserva [RES-105] | Cliente: Laura Gómez | Servicio: Auditoría Arquitectura Cloud | Tiempo: 3h | Estado: CONFIRMADA | Total: $450,000.00
+[2026-11-20 14:04:43] [AUDIT] Cierre de evaluación transaccional para reserva 'RES-105'.
+[2026-11-20 14:04:43] [END] === FIN DE EJECUCIÓN SIN INTERRUPCIONES ===
+[2026-11-21 19:41:20] [START] === INICIO DE EJECUCIÓN DEL SISTEMA SOFTWARE FJ ===
+[2026-11-21 19:41:20] [INFO] Cliente registrado: Cliente [CLI-01] Laura Gómez | Correo: laura.gomez@empresa.com | Tel: 3001234567
+[2026-11-21 19:41:20] [INFO] Cliente registrado: Cliente [CLI-02] Carlos Mendoza | Correo: cmendoza@tech.co | Tel: 3109876543
+[2026-11-21 19:41:20] [ERROR] Instanciación de cliente inválida -> DatoInvalidoError: [ERR_DATO_INVALIDO] El nombre del cliente debe contener al menos 3 caracteres.
+[2026-11-21 19:41:20] [INFO] Servicio registrado: Sala [SRV-01] Sala Innovación A (Aforo: 25 pers.) - $80,000.00/h [Disponible]
+[2026-11-21 19:41:20] [INFO] Servicio registrado: Equipo [SRV-02] Workstation Render RTX (Categoría: Cómputo Alto Rendimiento) - $45,000.00/h [Disponible]
+[2026-11-21 19:41:20] [INFO] Servicio registrado: Asesoría [SRV-03] Auditoría Arquitectura Cloud (Especialidad: Cloud & DevOps) - $150,000.00/h [Disponible]
+[2026-11-21 19:41:20] [ERROR] Instanciación de servicio inválida -> DatoInvalidoError: [ERR_DATO_INVALIDO] La tarifa base 'gratis' no corresponde a un valor numérico válido. | Causa encadenada: ValueError: could not convert string to float: 'gratis'
+[2026-11-21 19:41:20] [INFO] Reserva confirmada: Reserva [RES-101] | Cliente: Laura Gómez | Servicio: Sala Innovación A | Tiempo: 4h | Estado: CONFIRMADA | Total: $376,992.00
+[2026-11-21 19:41:20] [AUDIT] Cierre de evaluación transaccional para reserva 'RES-101'.
+[2026-11-21 19:41:20] [ERROR] Transacción fallida en reserva 'RES-102' -> ServicioNoDisponibleError: [ERR_SERVICIO_NO_DISPONIBLE] El servicio 'Sala Innovación A' no está disponible para reservar.
+[2026-11-21 19:41:20] [AUDIT] Cierre de evaluación transaccional para reserva 'RES-102'.
+[2026-11-21 19:41:20] [ERROR] Transacción fallida en reserva 'RES-103' -> ReservaError: [ERR_RESERVA] El alquiler de equipos requiere una duración mínima de 2 horas.
+[2026-11-21 19:41:20] [AUDIT] Cierre de evaluación transaccional para reserva 'RES-103'.
+[2026-11-21 19:41:20] [INFO] Reserva confirmada: Reserva [RES-104] | Cliente: Carlos Mendoza | Servicio: Workstation Render RTX | Tiempo: 8h | Estado: CONFIRMADA | Total: $364,140.00
+[2026-11-21 19:41:20] [AUDIT] Cierre de evaluación transaccional para reserva 'RES-104'.
+[2026-11-21 19:41:20] [INFO] Reserva RES-101 procesada satisfactoriamente. Total facturado: $376,992.00.
+[2026-11-21 19:41:20] [ERROR] Error al cancelar reserva 'RES-101' -> ReservaError: [ERR_RESERVA] Operación denegada: una reserva PROCESADA no puede cancelarse.
+[2026-11-21 19:41:20] [ERROR] Transacción fallida en reserva 'RES-105-ERR' -> CalculoInconsistenteError: [ERR_CALCULO] El porcentaje de descuento (150.0%) debe estar entre 0 y 100.
+[2026-11-21 19:41:20] [AUDIT] Cierre de evaluación transaccional para reserva 'RES-105-ERR'.
+[2026-11-21 19:41:20] [INFO] Reserva confirmada: Reserva [RES-105] | Cliente: Laura Gómez | Servicio: Auditoría Arquitectura Cloud | Tiempo: 3h | Estado: CONFIRMADA | Total: $450,000.00
+[2026-11-21 19:41:20] [AUDIT] Cierre de evaluación transaccional para reserva 'RES-105'.
+[2026-11-21 19:41:20] [END] === FIN DE EJECUCIÓN SIN INTERRUPCIONES ===
